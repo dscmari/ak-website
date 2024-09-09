@@ -6,7 +6,7 @@ import Psychotherapy from "./pages/Psychotherapy";
 import Proposals from "./pages/Proposals";
 import Crisis from "./pages/Crisis";
 import Contact from "./pages/Conact";
-
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
           <Route path="/Krise" element={<Crisis />} />
           <Route path="/Kontakt" element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

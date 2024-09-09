@@ -28,7 +28,7 @@ export default function Navbar() {
         <div className="logo-burger-container">
           <NavLink to="/">
             <div className="logo">
-              <img src="./src/assets/react.svg" alt="" />
+              <img src="./src/assets/monkey.jpg" alt="Logo von Ann-Kathrin Kraus" style={{height: 50}} />
             </div>
           </NavLink>
           <div id="burger-menu" onClick={toggleMenu}>
@@ -36,6 +36,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className={`items-container burgermenu ${menu ? 'menu-open' : 'menu-closed'}`}>
+          <span className="close-btn" onClick={toggleMenu}>&times;</span>
           <NavLink to="/Psychotherapie">Psychotherapie</NavLink>
           <NavLink to="/Angebot">Angebot</NavLink>
           <NavLink to="/UeberMich">Über Mich</NavLink>
