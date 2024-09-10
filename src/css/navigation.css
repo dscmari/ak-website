@@ -1,6 +1,13 @@
+.nav-container {
+  position: sticky;
+  top:0;
+  z-index: 10;
+}
+
 nav {
   position: relative;
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  background: white;
 }
 
 .logo-burger-container {
@@ -15,17 +22,15 @@ nav {
   align-items: start;
 }
 
-
-
 .logo {
   padding: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 825px) {
   nav {
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
+    align-items: center;
   }
   .items-container {
     flex-direction: row;
@@ -35,6 +40,11 @@ nav {
     font-size: 1.4rem;
     padding: 1rem;
     color: black;
+    transition: color 0.5s ease;
+  }
+
+  .items-container a:hover {
+    color: var(--primary-color);
   }
 }
 
@@ -89,9 +99,8 @@ nav {
   z-index: 10;
   overflow-x: hidden;
   transition: 0.5s;
-  background: rgb(18,0,36);
+  background: rgb(18, 0, 36);
   background: linear-gradient(45deg, #228b22, #4caf50, #a5d6a7);
-
 }
 
 .menu-open {
@@ -120,5 +129,5 @@ nav {
 }
 
 .close-btn:hover {
-   cursor: pointer;
+  cursor: pointer;
 }

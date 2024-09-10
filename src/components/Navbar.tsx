@@ -7,7 +7,7 @@ export default function Navbar() {
   const [burgermenu, setBurgermenu] = useState(false);
 
   const handleResize = () => {
-    setBurgermenu(window.innerWidth < 768)
+    setBurgermenu(window.innerWidth < 825)
   }
 
   useEffect (() => {
@@ -24,6 +24,7 @@ export default function Navbar() {
 
   if (burgermenu) {
     return (
+      <div className="nav-container">
       <nav>
         <div className="logo-burger-container">
           <NavLink to="/">
@@ -44,13 +45,16 @@ export default function Navbar() {
           <NavLink to="/Kontakt">Kontakt</NavLink>
         </div>
       </nav>
+      </div>
+
     );
   } else {
     return (
+      <div className="nav-container">
       <nav>
         <NavLink to="/">
           <div className="logo">
-            <img src="./src/assets/react.svg" alt="" />
+            <img src="./src/assets/monkey.jpg" alt="Logo von Ann-Kathrin Kraus" style={{height: 100}} />
           </div>
         </NavLink>
         <div className="items-container">
@@ -61,6 +65,8 @@ export default function Navbar() {
           <NavLink to="/Kontakt">Kontakt</NavLink>
         </div>
       </nav>
+      </div>
+
     );
   }
 }

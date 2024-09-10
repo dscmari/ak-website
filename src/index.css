@@ -30,6 +30,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   --primary-color: #228b22; /* Waldgrün */
+  --secondary-color: rgb(219 243 215);
 }
 
 a {
@@ -43,8 +44,14 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 320px;
+  max-width: 2000px;
   min-height: 100vh;
-  
+}
+
+@media (min-width: 2000px) {
+  body {
+    margin: 0 auto;
+  }
 }
 
 h1 {
@@ -84,11 +91,7 @@ button:focus-visible {
   }
 }
 
-.text-container {
-  margin: 1rem;
-}
-
-/* underline span */
+/* green graphic element */
 .text-container p {
   position: relative; /* Ensure the pseudo-element is positioned relative to the <p> tag */
   padding-left: 20px; /* Add padding to make space for the green element */
@@ -103,3 +106,5 @@ button:focus-visible {
   height: 0.7rem; /* Adjust the height to match the line height of the text */
   background-color: #228b22; /* Green color */
 }
+
+
