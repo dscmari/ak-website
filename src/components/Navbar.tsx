@@ -48,6 +48,7 @@ export default function Navbar() {
             className={`items-container burgermenu ${
               menu ? "menu-open" : "menu-closed"
             }`}
+            onClick={toggleMenu}
           >
             <span className="close-btn" onClick={toggleMenu}>
               &times;
