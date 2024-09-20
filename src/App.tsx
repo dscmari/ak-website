@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/ak-website" element={<Home />} />
           <Route path="/Psychotherapie" element={<Psychotherapy />} />
           <Route path="/UeberMich" element={<AboutMe />} />
           <Route path="/Angebot" element={<Proposals />} />

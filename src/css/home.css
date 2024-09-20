@@ -20,6 +20,8 @@
 .paragraph.visible {
   max-height: 500px;
   opacity: 1;
+  cursor: pointer;
+ 
 }
 
 .portrait-container p {

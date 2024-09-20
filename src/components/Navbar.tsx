@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="nav-container">
         <nav>
           <div className="logo-burger-container">
-            <NavLink to="/">
+            <NavLink to="/ak-website">
               <div className="logo">
                 <img
                   src={monkeyImage}
@@ -65,7 +65,7 @@ export default function Navbar() {
     return (
       <div className="nav-container">
         <nav className={`${scrollPosition > 0 ? 'no-padding' : 'padding'}`}>
-          <NavLink to="/">
+          <NavLink to="/ak-website">
             <div className="logo">
               <img
                 src={monkeyImage}
