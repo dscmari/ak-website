@@ -7,20 +7,23 @@ import Proposals from "./pages/Proposals";
 import Crisis from "./pages/Crisis";
 import Contact from "./pages/Conact";
 import Footer from "./components/Footer";
+import "/src/index.css";
 
 function App() {
   return (
     <>
       <Router>
+        <div className="bg-image">
         <Navbar />
-        <Routes>
-          <Route path="/ak-website" element={<Home />} />
-          <Route path="/Psychotherapie" element={<Psychotherapy />} />
-          <Route path="/UeberMich" element={<AboutMe />} />
-          <Route path="/Angebot" element={<Proposals />} />
-          <Route path="/Krise" element={<Crisis />} />
-          <Route path="/Kontakt" element={<Contact />} />
-        </Routes>
+          <Routes>
+            <Route path="/ak-website" element={<Home />} />
+            <Route path="/Psychotherapie" element={<Psychotherapy />} />
+            <Route path="/UeberMich" element={<AboutMe />} />
+            <Route path="/Angebot" element={<Proposals />} />
+            <Route path="/Krise" element={<Crisis />} />
+            <Route path="/Kontakt" element={<Contact />} />
+          </Routes>
+        </div>
         <Footer />
       </Router>
     </>

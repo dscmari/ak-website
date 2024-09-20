@@ -10,13 +10,3 @@
   opacity: 1;
   cursor: pointer;
 }
-
-@media (min-width: 768px) {
-  .home-container {
-    background-image: url("../assets/bg-baum.jpg");
-    background-size: 100% 100% ; /* Set specific dimensions */
-    background-attachment: fixed; /* Keeps the background fixed */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}

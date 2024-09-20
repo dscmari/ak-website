@@ -29,7 +29,7 @@ export default function Home() {
   };
 
   return (
-    <div className="home-container">
+    <div className="pt-12">
       <div className="md:grid grid-cols-2 md:m-8 md:mt-0 md:opacity-90">
         <div className="flex flex-col md:bg-secondary md:p-8">
           <img src={monkeyImage} alt="Ann-Kathrin Kraus" style={{height: '300px', width:'auto', objectFit: 'cover'}} />
@@ -38,17 +38,15 @@ export default function Home() {
             Sätze.
           </p>
         </div>
-        <div className="m-4 md:m-0 p-4 md:border-l-2 border-primary bg-secondary">
+        <div className="text-container m-4 md:m-0 p-4 md:border-l-2 border-primary bg-secondary">
           <h1 className="text-4xl mb-4 text-center">Überschrift</h1>
-          <p>
-            <span className="underline-span"></span>
+          <p className="ml-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consectetur, nemo laudantium magnam in ex facilis repellendus,
             delectus eos at cum laborum animi quasi asperiores reiciendis
             voluptates necessitatibus. Harum, iusto perferendis?
           </p>
-          <p>
-            <span className="underline-span"></span>
+          <p className="ml-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consectetur, nemo laudantium magnam in ex facilis repellendus,
             delectus eos at cum laborum animi quasi asperiores reiciendis
@@ -57,7 +55,7 @@ export default function Home() {
         </div>
       </div>
       {sections.map((section, index) => (
-        <div key={index} className="bg-secondary m-4 md:m-8 p-4 cursor-pointer md:opacity-90 hover:bg-slate-200" onClick={() => handleClick(index)}>
+        <div key={index} className="text-container bg-secondary m-4 md:m-8 p-4 cursor-pointer md:opacity-90 hover:bg-slate-200" onClick={() => handleClick(index)}>
           <div className="flex justify-center md:justify-start items-center pl-4">
             <h2 className="md:pl-10 text-xl font-semibold">{section.title}</h2>
             <div className="mt-1">
@@ -70,7 +68,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <p className={`paragraph ${openIndex === index ? "visible" : ""}`}>
+          <p className={`paragraph md:ml-10 ${openIndex === index ? "visible" : ""}`}>
             {section.content}
           </p>
         </div>

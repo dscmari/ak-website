@@ -32,7 +32,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --primary-color: #006400; /* Waldgrün */
+  --primary-color: rgb(70 83 41); /* Waldgrün */
   --secondary-color: rgb(219 243 215);
 }
 
@@ -62,25 +62,6 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -103,11 +84,23 @@ button:focus-visible {
 .text-container p::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0.6em; /* Adjust based on the vertical alignment of the text */
-  width: 10px; /* Adjust the thickness of the green element */
-  height: 0.7rem; /* Adjust the height to match the line height of the text */
-  background-color: var(--primary-color); /* Green color */
+  left: -5px;
+  top: 5px; /* Adjust based on the vertical alignment of the text */
+  width: 20px; /* Set the width of the SVG */
+  height: 20px; /* Set the height of the SVG */
+  background-image: url('./assets/paw.svg'); /* Reference the external SVG file */
+  background-size: cover; /* Ensure the SVG scales properly */
+  transform: rotate(30deg);
+}
+
+/* background image in app.tsx */
+@media (min-width: 768px) {
+  .bg-image {
+    background-image: url("/src/assets/bg-baum.jpg");
+    background-size: 100% 100% ; /* Set specific dimensions */
+    background-attachment: fixed; /* Keeps the background fixed */
+    padding-bottom: 2rem;
+  }
 }
 
 
