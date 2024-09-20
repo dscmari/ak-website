@@ -4,7 +4,6 @@ import monkeyImage from "../assets/monkey.jpg";
 import keybordArrowDown from "../assets/keybord-arrow-down.svg";
 
 export default function Home() {
-  const [showText, setShowText] = useState(false);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const sections = [
@@ -59,7 +58,7 @@ export default function Home() {
             <div className="mt-1">
               <img
                 className={`w-12 h-12 transition-transform duration-500 ${
-                  showText ? "transform scale-y-[-1]" : ""
+                  openIndex === index ? "transform scale-y-[-1]" : ""
                 }`}
                 src={keybordArrowDown}
                 alt="Tastatur Pfeil nach unten"
