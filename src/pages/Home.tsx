@@ -1,6 +1,16 @@
+import { useState } from "react";
 import "/src/css/home.css";
 
 export default function Home() {
+
+  const [showText, setShowText] = useState(false)
+
+  const handleClick = () => {
+
+    console.log(showText)
+    setShowText(!showText)
+  }
+
   return (
     <div className="home-container">
       <div className="img-text-area">
@@ -31,18 +41,12 @@ export default function Home() {
         </div>
       </div>
       <div className="text-container">
-        <h2>Sub-Überschrift</h2>
-        <p>
+        <h2 onClick={handleClick}>Sub-Überschrift &#9660;</h2>
+        <p className={`paragraph ${showText ? 'visible' : ''}`}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
           nemo laudantium magnam in ex facilis repellendus, delectus eos at cum
           laborum animi quasi asperiores reiciendis voluptates necessitatibus.
           Harum, iusto perferendis?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo
-          molestias perspiciatis consequuntur blanditiis. Dicta consequatur
-          consectetur animi natus nobis fuga ea, cum doloribus voluptatibus vel
-          a deserunt quibusdam eveniet!
         </p>
       </div>
       <div className="text-container">
@@ -52,12 +56,6 @@ export default function Home() {
           nemo laudantium magnam in ex facilis repellendus, delectus eos at cum
           laborum animi quasi asperiores reiciendis voluptates necessitatibus.
           Harum, iusto perferendis?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo
-          molestias perspiciatis consequuntur blanditiis. Dicta consequatur
-          consectetur animi natus nobis fuga ea, cum doloribus voluptatibus vel
-          a deserunt quibusdam eveniet!
         </p>
       </div>
     </div>

@@ -29,7 +29,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --primary-color: #228b22; /* Waldgrün */
+  --primary-color: #006400; /* Waldgrün */
   --secondary-color: rgb(219 243 215);
 }
 
@@ -104,7 +104,7 @@ button:focus-visible {
   top: 0.6em; /* Adjust based on the vertical alignment of the text */
   width: 10px; /* Adjust the thickness of the green element */
   height: 0.7rem; /* Adjust the height to match the line height of the text */
-  background-color: #228b22; /* Green color */
+  background-color: var(--primary-color); /* Green color */
 }
 
 

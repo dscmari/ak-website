@@ -1,6 +1,6 @@
 .nav-container {
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 100;
 }
 
@@ -8,6 +8,9 @@ nav {
   position: relative;
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   background: white;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .logo-burger-container {
@@ -20,10 +23,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: start;
-}
-
-.logo {
-  padding: 1rem;
 }
 
 @media (min-width: 825px) {
@@ -95,7 +94,7 @@ nav {
   height: 100vh;
   width: 0;
   padding-top: 5rem;
-  opacity: 0.9;
+  opacity: 1;
   z-index: 10;
   overflow-x: hidden;
   transition: 0.5s;
@@ -130,4 +129,14 @@ nav {
 
 .close-btn:hover {
   cursor: pointer;
+}
+
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.padding {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
