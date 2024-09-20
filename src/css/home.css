@@ -1,15 +1,3 @@
-.portrait {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-.text-container {
-  background-color: var(--secondary-color);
-  margin: 1rem;
-  padding: 0.5rem;
-  position: relative;
-}
-
 .paragraph {
   max-height: 0; /* Initially hide the paragraph */
   opacity: 0;
@@ -21,72 +9,14 @@
   max-height: 500px;
   opacity: 1;
   cursor: pointer;
- 
 }
 
-.portrait-container p {
-  padding: 1rem;
-  margin: 0;
-}
-
-.headline-container {
-  background-color: var(--secondary-color);
-  padding: 1rem;
-  margin: 1rem;
-}
-.headline-container h1 {
-  padding: 1rem;
-  margin-top: 0;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.text-container p {
-  margin: 0 !important;
-
-}
-
-.text-container h2 {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-
-@media (min-width: 825px) {
-  .text-container {
-    margin: 2rem;
-    opacity: 0.9;
-  }
+@media (min-width: 768px) {
   .home-container {
     background-image: url("../assets/bg-baum.jpg");
     background-size: 100% 100% ; /* Set specific dimensions */
     background-attachment: fixed; /* Keeps the background fixed */
- 
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-  .img-text-area {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 2rem 2rem 0 2rem;
-  }
-  .portrait-container {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--secondary-color);
-    padding: 2rem;
-    opacity: 0.9;
-  }
-  .portrait {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-  }
-  .headline-container {
-    background-color: var(--secondary-color);
-    padding: 0 2rem 2rem 2rem;
-    margin: 0;
-    opacity: 0.9;
-    border-left: solid 3px var(--primary-color);
   }
 }

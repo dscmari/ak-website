@@ -39,7 +39,7 @@ nav {
     font-size: 1.4rem;
     padding: 1rem;
     color: black;
-    transition: color 0.5s ease;
+    transition: color 0.3s ease;
   }
 
   .items-container a:hover {

@@ -53,6 +53,7 @@ export default function Navbar() {
             <span className="close-btn" onClick={toggleMenu}>
               &times;
             </span>
+            <NavLink to="/ak-website">Home</NavLink>
             <NavLink to="/Psychotherapie">Psychotherapie</NavLink>
             <NavLink to="/Angebot">Angebot</NavLink>
             <NavLink to="/UeberMich">Über Mich</NavLink>
@@ -67,7 +68,7 @@ export default function Navbar() {
       <div className="nav-container">
         <nav className={`${scrollPosition > 0 ? 'no-padding' : 'padding'}`}>
           <NavLink to="/ak-website">
-            <div className="logo">
+            <div className="logo hover:shadow-lg">
               <img
                 src={monkeyImage}
                 alt="Logo von Ann-Kathrin Kraus"

@@ -17,6 +17,11 @@ export default function Home() {
       content:
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,nemo laudantium magnam in ex facilis repellendus, delectus eos at cumaborum animi quasi asperiores reiciendis voluptates necessitatibus.Harum, iusto perferendis?",
     },
+    {
+      title: "Sub-überschrift 3",
+      content:
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,nemo laudantium magnam in ex facilis repellendus, delectus eos at cumaborum animi quasi asperiores reiciendis voluptates necessitatibus.Harum, iusto perferendis?",
+    }
   ];
 
   const handleClick = (index: number) => {
@@ -25,16 +30,16 @@ export default function Home() {
 
   return (
     <div className="home-container">
-      <div className="img-text-area">
-        <div className="portrait-container">
-          <img className="portrait" src={monkeyImage} alt="Ann-Kathrin Kraus" />
-          <p>
+      <div className="md:grid grid-cols-2 md:m-8 md:mt-0 md:opacity-90">
+        <div className="flex flex-col md:bg-secondary md:p-8">
+          <img src={monkeyImage} alt="Ann-Kathrin Kraus" style={{height: '300px', width:'auto', objectFit: 'cover'}} />
+          <p className="p-4 md:px-0">
             Portrait, am besten mit Luna, Beschreibung kurzer Text, etwa 1-2
             Sätze.
           </p>
         </div>
-        <div className="headline-container text-container">
-          <h1>Überschrift</h1>
+        <div className="m-4 md:m-0 p-4 md:border-l-2 border-primary bg-secondary">
+          <h1 className="text-4xl mb-4 text-center">Überschrift</h1>
           <p>
             <span className="underline-span"></span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -52,9 +57,9 @@ export default function Home() {
         </div>
       </div>
       {sections.map((section, index) => (
-        <div key={index} className="text-container cursor-pointer" onClick={() => handleClick(index)}>
-          <div className="flex items-center pl-4">
-            <h2 className="pl-10 text-xl font-semibold">{section.title}</h2>
+        <div key={index} className="bg-secondary m-4 md:m-8 p-4 cursor-pointer md:opacity-90 hover:bg-slate-200" onClick={() => handleClick(index)}>
+          <div className="flex justify-center md:justify-start items-center pl-4">
+            <h2 className="md:pl-10 text-xl font-semibold">{section.title}</h2>
             <div className="mt-1">
               <img
                 className={`w-12 h-12 transition-transform duration-500 ${
