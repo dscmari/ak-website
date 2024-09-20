@@ -38,7 +38,7 @@ export default function Home() {
             Sätze.
           </p>
         </div>
-        <div className="text-container m-4 md:m-0 p-4 md:border-l-2 border-primary bg-secondary">
+        <div className="md:flex flex-col justify-center gap-4 text-container m-4 md:m-0 p-4 md:border-l-2 border-primary bg-secondary">
           <h1 className="text-4xl mb-4 text-center">Überschrift</h1>
           <p className="ml-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
