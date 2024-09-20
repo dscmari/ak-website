@@ -29,7 +29,7 @@ export default function Home() {
   };
 
   return (
-    <div className="pt-12">
+    <div className="md:pt-12">
       <div className="md:grid grid-cols-2 md:m-8 md:mt-0 md:opacity-90">
         <div className="flex flex-col md:bg-secondary md:p-8">
           <img src={monkeyImage} alt="Ann-Kathrin Kraus" style={{height: '300px', width:'auto', objectFit: 'cover'}} />
