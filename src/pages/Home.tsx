@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "/src/css/home.css";
+import monkeyImage from "../assets/monkey.jpg"
 
 export default function Home() {
 
@@ -17,7 +18,7 @@ export default function Home() {
         <div className="portrait-container">
           <img
             className="portrait"
-            src="./src/assets/monkey.jpg"
+            src={monkeyImage}
             alt="Ann-Kathrin Kraus"
           />
           <p>Portrait, am besten mit Luna, Beschreibung kurzer Text, etwa 1-2 Sätze.</p>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "/src/css/navigation.css";
 import useScrollPosition from "../utils/useScrollPosition";
+import monkeyImage from '../assets/monkey.jpg';
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -33,7 +34,7 @@ export default function Navbar() {
             <NavLink to="/">
               <div className="logo">
                 <img
-                  src="./src/assets/monkey.jpg"
+                  src={monkeyImage}
                   alt="Logo von Ann-Kathrin Kraus"
                   style={{ height: 50 }}
                 />
@@ -67,7 +68,7 @@ export default function Navbar() {
           <NavLink to="/">
             <div className="logo">
               <img
-                src="./src/assets/monkey.jpg"
+                src={monkeyImage}
                 alt="Logo von Ann-Kathrin Kraus"
                 style={{ height: 50 }}
               />
