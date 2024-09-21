@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </div>
       {sections.map((section, index) => (
-        <div key={index} className="text-container bg-secondary m-4 md:m-8 p-4 cursor-pointer md:opacity-90 hover:bg-slate-200" onClick={() => handleClick(index)}>
+        <div key={index} className="text-container bg-secondary m-4 md:m-8 p-4 cursor-pointer md:opacity-90 hover:bg-white" onClick={() => handleClick(index)}>
           <div className="flex justify-center md:justify-start items-center pl-4">
             <h2 className="md:pl-10 text-xl font-semibold">{section.title}</h2>
             <div className="mt-1">

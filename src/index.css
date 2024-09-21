@@ -17,9 +17,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'raleway';
+  src: local("raleway"), url('./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'raleway';
+  font-size: 3.2em;
+  line-height: 1.1;
+}
 
 :root {
-  font-family: 'Lato', sans-serif;
+  font-family: 'raleway', sans-serif;
   line-height: 1.8;
   font-weight: 400;
 
@@ -32,13 +44,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --primary-color: rgb(70 83 41); /* Waldgrün */
+  --primary-color: #006400; /* Waldgrün */
   --secondary-color: rgb(219 243 215);
 }
 
 a {
   font-weight: 500;
-  color: black;
   text-decoration: inherit;
 }
 
@@ -57,10 +68,7 @@ body {
   }
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+
 
 @media (prefers-color-scheme: light) {
   :root {
