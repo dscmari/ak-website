@@ -67,7 +67,7 @@ export default function Navbar() {
     return (
       <div className="nav-container">
         <nav className={`bg-white ${scrollPosition > 0 ? 'no-padding md:opacity-100' : 'padding md:opacity-90 '}`}>
-          <NavLink to="/ak-website">
+          <NavLink to="/Home">
             <div className="logo hover:shadow-lg">
               <img
                 src={monkeyImage}

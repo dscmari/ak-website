@@ -5,7 +5,7 @@ import AboutMe from "./pages/AboutMe";
 import Psychotherapy from "./pages/Psychotherapy";
 import Proposals from "./pages/Proposals";
 import Crisis from "./pages/Crisis";
-import Contact from "./pages/Conact";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import "/src/index.css";
 
@@ -16,7 +16,7 @@ function App() {
         <div className="bg-image">
         <Navbar />
           <Routes>
-            <Route path="/ak-website" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
             <Route path="/Psychotherapie" element={<Psychotherapy />} />
             <Route path="/UeberMich" element={<AboutMe />} />
             <Route path="/Angebot" element={<Proposals />} />
