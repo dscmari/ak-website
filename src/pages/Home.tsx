@@ -50,14 +50,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-4 my-4 contact-info">
-        <div className="m-6 p-4 rounded-md bg-white">
+      <div className="py-8 my-4 contact-info">
+        <div className="mx-8 lg:border-8 p-4 bg-white">
           <h3 className="">Kontaktinfo</h3>
           <p>Kontaktdaten und Verweis auf Kontaktfeld</p>
         </div>
       </div>
 
-      {sections.map((section, index) => (
+<div className="pb-8">
+{sections.map((section, index) => (
         <div
           key={index}
           className="text-container bg-white m-4 lg:m-8 p-4 cursor-pointer border-8"
@@ -85,6 +86,8 @@ export default function Home() {
         </div>
       ))}
     </div>
+</div>
+
     /*
     <div className="md:pt-12">
       <div className="md:grid grid-cols-2 md:m-8 md:mt-0">
