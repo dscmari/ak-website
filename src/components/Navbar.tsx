@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="bg-white nav-container">
         <nav>
           <div className="logo-burger-container">
-            <NavLink to="/Home">
+            <NavLink to="/">
               <div className="logo">
                 <img
                   src={monkeyImage}
