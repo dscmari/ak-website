@@ -28,10 +28,10 @@ export default function Navbar() {
 
   if (burgermenu) {
     return (
-      <div className="nav-container">
+      <div className="bg-white nav-container">
         <nav>
           <div className="logo-burger-container">
-            <NavLink to="/ak-website">
+            <NavLink to="/Home">
               <div className="logo">
                 <img
                   src={monkeyImage}
@@ -53,7 +53,7 @@ export default function Navbar() {
             <span className="close-btn" onClick={toggleMenu}>
               &times;
             </span>
-            <NavLink to="/ak-website">Home</NavLink>
+            <NavLink to="/">Home</NavLink>
             <NavLink to="/Psychotherapie">Psychotherapie</NavLink>
             <NavLink to="/Angebot">Angebot</NavLink>
             <NavLink to="/UeberMich">Über Mich</NavLink>
@@ -66,8 +66,8 @@ export default function Navbar() {
   } else {
     return (
       <div className="nav-container">
-        <nav className={`bg-white ${scrollPosition > 0 ? 'no-padding md:opacity-100' : 'padding md:opacity-90 '}`}>
-          <NavLink to="/Home">
+        <nav className={`bg-white ${scrollPosition > 0 ? 'no-padding' : 'padding'}`}>
+          <NavLink to="/">
             <div className="logo hover:shadow-lg">
               <img
                 src={monkeyImage}

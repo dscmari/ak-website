@@ -9,4 +9,18 @@
   max-height: 500px;
   opacity: 1;
   cursor: pointer;
+ 
 }
+
+@media (min-width: 1024px) {
+  .home-container {
+    background: linear-gradient(0deg, rgba(0, 139, 96, 0.3), rgba(0, 139, 96, 0.3)), url('/src/assets/raum-test.jpeg');
+  }
+}
+@media (max-width: 1024px) {
+  .contact-info{
+    background: linear-gradient(0deg, rgba(0, 139, 96, 0.3), rgba(0, 139, 96, 0.3)), url('/src/assets/bg-baum.jpg');
+    background-size: cover;
+  }
+}
+

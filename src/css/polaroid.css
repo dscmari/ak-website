@@ -1,0 +1,28 @@
+.polaroid {
+  padding: 10px;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  transform: rotate(-2deg);
+  margin: 20px 0 30px 0;
+  font-family: "Arial", sans-serif;
+}
+
+@media (min-width: 860px) {
+  .polaroid {
+    margin: 20px;
+  }
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid white;
+}
+
+.caption {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}

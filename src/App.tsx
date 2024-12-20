@@ -13,17 +13,15 @@ function App() {
   return (
     <>
       <Router>
-        <div className="bg-image">
         <Navbar />
           <Routes>
-            <Route path="/Home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/Psychotherapie" element={<Psychotherapy />} />
             <Route path="/UeberMich" element={<AboutMe />} />
             <Route path="/Angebot" element={<Proposals />} />
             <Route path="/Krise" element={<Crisis />} />
             <Route path="/Kontakt" element={<Contact />} />
           </Routes>
-        </div>
         <Footer />
       </Router>
     </>

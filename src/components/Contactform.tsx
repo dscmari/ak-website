@@ -33,20 +33,20 @@ export default function Contactform() {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="bg-secondary flex flex-col gap-4 p-4 md:w-1/2 mx-auto"
+      className="bg-white flex flex-col gap-4 p-4 md:w-1/2 mx-auto lg:text-xl rounded-md"
     >  
     <h2>Kontaktformular</h2>
       <div className="flex flex-col">
         <label>Name</label>
-        <input type="text" name="user_name" placeholder="Name" className="p-2" />
+        <input type="text" name="user_name" placeholder="Name" className="p-2 border-2"/>
       </div>
       <div className="flex flex-col">
         <label>Email</label>
-        <input type="email" name="user_email" placeholder="Email" className="p-2"/>
+        <input type="email" name="user_email" placeholder="Email" className="p-2 border-2"/>
       </div>
       <div className="flex flex-col">
         <label>Message</label>
-        <textarea name="message" placeholder="Nachricht" className=""/>
+        <textarea name="message" placeholder="Nachricht" className="p-2 border-2"/>
       </div>
       <div>
         <input

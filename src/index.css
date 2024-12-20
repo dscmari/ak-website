@@ -30,6 +30,18 @@ h1 {
   line-height: 1.1;
 }
 
+h2 {
+  font-family: 'raleway';
+  font-size: 2em;
+  line-height: 1;
+}
+
+@media (min-width: 860px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+
 :root {
   font-family: 'raleway', sans-serif;
   line-height: 1.8;
@@ -45,6 +57,7 @@ h1 {
   -moz-osx-font-smoothing: grayscale;
 
   --primary-color: #006400; /* Waldgrün */
+  --primary-color-rgb: 0, 100, 0; /* RGB values of Waldgrün */
   --secondary-color: rgb(219 243 215);
 }
 
@@ -83,17 +96,17 @@ body {
   }
 }
 
-/* green graphic element */
+/* green paw */
 .text-container p {
   position: relative; /* Ensure the pseudo-element is positioned relative to the <p> tag */
-  padding-left: 20px; /* Add padding to make space for the green element */
+  padding-left: 40px; /* Add padding to make space for the green element */
 }
 
 .text-container p::before {
   content: "";
   position: absolute;
-  left: -5px;
-  top: 5px; /* Adjust based on the vertical alignment of the text */
+  left: 10px;
+  top: 4px; /* Adjust based on the vertical alignment of the text */
   width: 20px; /* Set the width of the SVG */
   height: 20px; /* Set the height of the SVG */
   background-image: url('./assets/paw.svg'); /* Reference the external SVG file */
@@ -101,14 +114,8 @@ body {
   transform: rotate(30deg);
 }
 
-/* background image in app.tsx */
-@media (min-width: 768px) {
-  .bg-image {
-    background-image: url("/src/assets/bg-baum.jpg");
-    background-size: 100% 100% ; /* Set specific dimensions */
-    background-attachment: fixed; /* Keeps the background fixed */
-    padding-bottom: 2rem;
-  }
-}
+/*  */
+
+
 
 
